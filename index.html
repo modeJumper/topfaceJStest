@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Topface test-task</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<!--
+
+Тестовое задание Topface
+Разработать приложение: текстовый редактор заметок с тегами. 
+Задание подразумевает реализацию на нативном JavaScript, без использования фреймворков.
+
+Возможности:
+- создание, редактирование, просмотр и удаление заметок;
+- фильтр заметок по тегу;
+- добавление и удаление тегов из списка.
+
+Примечания:
+Во время редактирования заметки пользователь может создавать теги, 
+используя символ #. 
+
+Например: пользователь вводит текст “I wanna go to #shop”. По мере (окончании) ввода должен создаться соответствующий тег и отобразиться в списке под текстовым полем.
+При редактировании заметки все слова, соответствующие тегам, должны подсвечиваться.
+В качестве хранилища данных использовать localStorage.
+
+Будет плюсом: 
+- покрытие кода тестами;
+- реализация на ES6.
+
+Результат пришлите в виде ссылки на репозиторий на GitHub.
+
+	-->
+
+	<div class="header">
+		<div class="container"> 
+			<h1>Тестовое задание Topface</h1>
+		</div>
+	</div>
+
+	<div class="wrapper">
+		<div class="container textarea" id="noticewriter">
+			<h3>Текст для новой заметки</h3>
+
+		</div>
+		<div class="container publishing">
+			<div class="tags">Теги: <span id="tagsblock"></span></div> <button id="addnotice"><img src="img/pando.png" alt="emoji"></button>
+		</div>
+	</div>
+
+	<div class="wrapper">
+		<div class="container notices" id="noticeswrapper">
+			<!-- Здесь могли быть заметки из локального хранилища? Могли, но меня отвлекли по времени.
+			<div class="inner-block">
+				<div class="notice-block">
+					<div class="notice-title">Номер заметки</div>
+					<div class="notice-content">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita earum a eveniet alias dolorem omnis, nostrum iure iste eius placeat voluptatum, error magni consequuntur. Voluptatibus cum eos consequatur, eaque rem.
+					</div>
+				</div>
+			</div>
+			<div class="inner-block">
+				<div class="notice-block">
+					<div class="notice-title">Номер заметки</div>
+					<div class="notice-content">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita earum a eveniet alias dolorem omnis, nostrum iure iste eius placeat voluptatum, error magni consequuntur. Voluptatibus cum eos consequatur, eaque rem.
+					</div>
+				</div>
+			</div>
+			-->
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="container">
+			
+		</div>
+	</div>
+
+	<script src="js/script.js"></script>
+</body>
+</html>
