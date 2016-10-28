@@ -1,9 +1,9 @@
 document.body.onload = function() {
-    console.log('document is ready to js-codin, bro');
+
 
     // число созданных записей
     var noticeCount = document.body.querySelectorAll(".notices .inner-block").length;
-    console.log(noticeCount);
+
 
     // регулярка для хештегов
     var reg = new RegExp(/(#\w+)/,"g","i", "m");
@@ -18,7 +18,6 @@ document.body.onload = function() {
 	var noticeIndex = "Заметка " + (noticeCount+1);
 	var storageText, returnTags;
 
-	console.log(typeof localStorage.getItem(noticeIndex));
 		if (localStorage.getItem(noticeIndex) && localStorage.getItem(noticeIndex) !== 'undefined') {
 			storageText = JSON.parse(localStorage.getItem(noticeIndex));
 			divpad.innerHTML = storageText;
